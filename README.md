@@ -4,3 +4,5 @@ Este desafio faz parte do processo seletivo para a bolsa Trainee LLM do Projeto 
 Para ativação do ambiente virtual: .venv\Scripts\activate
 
 Para instalar as bibliotecas necessárias: pip install -r requirements.txt
+
+Para iniciar o programa: python src/main.py --pdf nome-do-pdf.pdf
