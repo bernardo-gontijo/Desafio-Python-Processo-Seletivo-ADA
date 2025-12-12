@@ -3,15 +3,15 @@ Este desafio faz parte do processo seletivo para a bolsa Trainee LLM do Projeto 
 
 **INFORMAÇÕES NECESSÁRIAS**
 
-Para ativação do ambiente virtual: .venv\Scripts\activate
+Para ativação do ambiente virtual:  .venv\Scripts\activate
 
-Para instalar as bibliotecas necessárias: pip install -r requirements.txt
+Para instalar as bibliotecas necessárias:  pip install -r requirements.txt
 
 **ENTRADA:**
 
-Para iniciar o programa digite o seguinte comando no bash: python src/main.py --pdf nome-do-pdf.pdf
+Para iniciar o programa digite o seguinte comando no bash:  python src/main.py --pdf nome-do-pdf.pdf
 
-**Explicações**
+**EXPLICAÇÕES**
 
 *Ao iniciar o algoritmo com a entrada correta serão exibidos:*
     1. Número total de páginas
