@@ -20,7 +20,7 @@ def extract_images(pdf_path: str, output_dir_base: str = "images") -> List[str]:
 
         for page in document:
 
-            # Referêmcias das imagens
+            # Referencias das imagens
             images = page.get_images()
 
             for img_idx, image in enumerate(images):

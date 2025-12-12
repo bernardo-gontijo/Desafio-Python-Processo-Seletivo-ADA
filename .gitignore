@@ -1,5 +1,6 @@
-venv/
+/venv
 *.pdf
 *.pyc
 *Dir.txt
 *.jpeg
+*resumo.md

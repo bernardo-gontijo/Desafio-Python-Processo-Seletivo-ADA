@@ -4,6 +4,7 @@ from typing import NamedTuple, Any
 
 class CLIArgs(NamedTuple):
     pdf_path: str
+    output_dir: str
 
 def create() -> argparse.ArgumentParser:
     
@@ -27,4 +28,4 @@ def arguments() -> CLIArgs:
     if not args.pdf.lower().endswith('.pdf'):
         parser.error(f"Erro...Arquivo não é um pdf")
 
-    return CLIArgs(pdf_path = args.pdf)
+    return CLIArgs(pdf_path = args.pdf, output_dir = args.output_dir)

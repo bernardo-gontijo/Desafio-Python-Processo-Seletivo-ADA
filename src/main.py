@@ -1,8 +1,9 @@
 from cli.arguments import arguments, CLIArgs
 from pdf.extractor import extract_content, extract_num_pages
 from pdf.images import extract_images
-from utils.files import get_file_size
+from utils.files import get_file_size, save_resumo_file, get_summary_filepath
 from utils.text import clean_text, filter_stopwords, get_num_words, get_vocabulary_stats
+from llm.summarize import generate_summary
 
 def pdf_analysis(args: CLIArgs):
     
@@ -39,11 +40,29 @@ def pdf_analysis(args: CLIArgs):
         print(f" - {word}: {count}")
     print("--------------------------------------------")
 
-    # Extração de imagens
+    # Extração e Salvamento de imagens
 
     print("Extraindo imagens...")
 
     extract_images(pdf_path)
+
+    # Geração do resumo LLM
+    summary = generate_summary(full_text)
+    
+    if summary:
+        print("\n------------- RESUMO GERADO -------------")
+        print(summary)
+        print("-----------------------------------------\n")
+
+        # Para salvar o resumo em .md
+        summary_path = get_summary_filepath(pdf_path=args.pdf_path, output_dir=args.output_dir)
+        saved_resumo = save_resumo_file(content=summary, full_path=summary_path)
+
+        if saved_resumo:
+            print(f"Resumo salvo em: {saved_resumo}")
+        else:
+            print("Falha ao salvar resumo")
+        
 
 def main():
   
