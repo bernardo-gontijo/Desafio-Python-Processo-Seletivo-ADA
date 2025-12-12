@@ -11,11 +11,13 @@ Para ativação do ambiente virtual:  `.venv\Scripts\activate`
 
 Para instalar as bibliotecas necessárias:  `pip install -r requirements.txt`
 
+Para autenticar o hugging face: `huggingface-cli login`
+
 
 **ENTRADA:**
 
 
-Para iniciar o programa digite o seguinte comando no bash:  `python src/main.py --pdf nome-do-pdf.pdf`
+Para iniciar o programa digite o seguinte comando no bash:  `python src/main.py --pdf [nome-do-pdf].pdf`
 
 
 **EXPLICAÇÕES**
@@ -32,8 +34,8 @@ Para iniciar o programa digite o seguinte comando no bash:  `python src/main.py 
 **Além disso:**
 
 *Serão criadas as pastas/arquivos:*
-- **images:** Com as imagens do pdf identificadas
-- **nome-do-pdf.md:** Com o resumo simples gerado por LLM (Gerados pelo modelo local do Hugging Face, mais especificamente Gemma-2B-IT)
+- **images/:** Com as imagens do pdf identificadas
+- **[nome-do-pdf]_resumo.md:** Com o resumo simples gerado por LLM (Gerados pelo modelo local do Hugging Face, mais especificamente Gemma-2B-IT)
 
 
 *Pode ter uma certa demora na geração do resumo pela sua maior complexidade para a maquina.*
