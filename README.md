@@ -13,7 +13,7 @@ Para iniciar o programa digite o seguinte comando no bash:  python src/main.py -
 
 **EXPLICAÇÕES**
 
-*Ao iniciar o algoritmo com a entrada correta serão exibidos:*
+**Ao iniciar o algoritmo com a entrada correta serão exibidos:**
     1. Número total de páginas
     2. Número total de palavras
     3. Tamanho em bytes do arquivo PDF
@@ -21,6 +21,6 @@ Para iniciar o programa digite o seguinte comando no bash:  python src/main.py -
     5. Lista das 10 palavras mais comuns 
 
 *Além disso:*
-    Serão criadas as pastas/arquivos:
+    **Serão criadas as pastas/arquivos:**
         images: Com as imagens do pdf identificadas
         nome-do-pdf.md: Com o resumo gerado por LLM (Gerados pelo modelo local do Hugging Face, mais especificamente Gemma-2B-IT)
