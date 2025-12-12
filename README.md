@@ -36,4 +36,9 @@ Para iniciar o programa digite o seguinte comando no bash:  `python src/main.py 
 - **nome-do-pdf.md:** Com o resumo simples gerado por LLM (Gerados pelo modelo local do Hugging Face, mais especificamente Gemma-2B-IT)
 
 
-**Pode ter uma certa demora na geração do resumo pela sua maior complexidade para a maquina.**
+*Pode ter uma certa demora na geração do resumo pela sua maior complexidade para a maquina.*
+
+
+**Pretenções futuras:**
+- **Adaptação:** para suportar maiores pdf's, e realizar o processo de forma mais rapida
+- **Melhorias:** na qualidade do resumo, e aprofundar seu nível de estudos
