@@ -33,4 +33,7 @@ Para iniciar o programa digite o seguinte comando no bash:  `python src/main.py 
 
 *Serão criadas as pastas/arquivos:*
 - **images:** Com as imagens do pdf identificadas
-- **nome-do-pdf.md:** Com o resumo gerado por LLM (Gerados pelo modelo local do Hugging Face, mais especificamente Gemma-2B-IT)
+- **nome-do-pdf.md:** Com o resumo simples gerado por LLM (Gerados pelo modelo local do Hugging Face, mais especificamente Gemma-2B-IT)
+
+
+**Pode ter uma certa demora na geração do resumo pela sua maior complexidade para a maquina.**
